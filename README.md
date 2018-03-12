@@ -37,23 +37,30 @@ In order to do so, go to the Catalog find the wanted service.
 Watson Machine Learning service is under the Data & Analytics category. Select the service and click on create. 
 ![](/screenshots/Picture4.png?raw=true)
 
+![](/screenshots/Picture7.png?raw=true)
+
 Go back to the Catalog and repeat the process for Apache Spark also located under Data & Analytics
 ![](/screenshots/Picture5.png?raw=true)
+
+![](/screenshots/Picture8.png?raw=true)
 
 Go back to the Catalogue and repeat the process for Cloud Object Storage, located under Storage.
 ![](/screenshots/Picture6.png?raw=true)
 
+![](/screenshots/Picture9.png?raw=true)
+
 Once you have created the three services click on the IBM Cloud logo on the top left corner to go to your Dashboard. 
-![](/screenshots/PictureX.png?raw=true)
+![](/screenshots/Picture10.png?raw=true)
 
 Listed you will find the needed services as shown in the image.
 
-![](/screenshots/PictureX.png?raw=true)
+![](/screenshots/Picture11.png?raw=true)
 
 ## Step 2: Configure Data Science Experience 
 
 Go to https://eu-gb.datascience.ibm.com to access IBM Data Science Experience. 
-![](/screenshots/Picture0.png?raw=true)
+
+![](/screenshots/Picture1.png?raw=true)
 
 Sign in using your IBM Cloud credentials. 
 
