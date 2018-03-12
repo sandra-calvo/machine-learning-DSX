@@ -107,46 +107,27 @@ Under the section Models, click on New model.
 ![](/screenshots/Picture17.png?raw=true)
 
 We will build a logistic regression model that assesses the likelihood that a customer of an outdoor equipment company will buy a tent. 
-Give the model a name and a description.
+Give the model a name and a description, select Model builder and Manual.
 
+Automatic method: you rely on automatic data preparation (ADP) completely. 
+Manual method: in addition to some functions that are handled by the ADP transformer, you can add and configure your own estimators, which are the algorithms used in the analysis. 
 
+![](/screenshots/Picture18.png?raw=true)
 
-#### Automatic model creation
+Click on Create.
 
-You can create models by using IBM Data Science Experience in different ways. From within a project, when you use the Add to project > Model function, you have two choices: automatic or manual. For the automatic method, you rely on automatic data preparation (ADP) completely. For the manual method, in addition to some functions that are handled by the ADP transformer, you can add and configure your own estimators, which are the algorithms used in the analysis. 
+Let's add some data! Download the GoSales_Tx_LogisticRegression.csv file from this repository and click on Add datasets. 
 
-To create a model by using the automatic model builder, perform the following steps:
+![](/screenshots/Picture19.png?raw=true)
 
-    Open a project in Data Science Experience.
-    If your data is not already part of the project, add a data set to the data assets for the project.
-    To create a model, from the project overview page, click Add to project, and then click Model.
-    Name the model.
-    If you have more than one configured, you have the option to choose a machine learning service and a spark service. If you have not already configured a machine learning instance, you are prompted to assign one to this project or create one.
-    To prepare your data and create a model automatically, click Automatic and then click Create.
-    On the Select data asset step, select a data asset and click Next. If you don't see the data asset you wanted, you can add it from this window by clicking Add Data Assets. Not sure? Click the name of the data asset to preview it. You can also add a connection. Select connections details and click Continue. Based on your data you must select additional connection details, such as schema and table.
-    After the data is loaded, you must select a column value to predict and a technique. Although a technique is automatically chosen for you, you have the option to change this.
-    Optionally, adjust the validation split. By default this is set to Train: 60%, Test 20%, and Holdout: 20%.
-    After you are done making adjustments, click Next.
-    After the model is done training, click Save, and then, click Save again.
-    If you are ready to deploy this model, from the model information page, click Add Deployment. Deploying the model makes it available to a wider audience. Note: You can have only one deployment per model. For more information, see Deploying a model.
+Browse for the csv file and open it. Once it finished loading you will see it in the data assets.
+Select it and click on Next. 
 
-#### Manual model creation
+![](/screenshots/Picture20.png?raw=true)
 
-To create a model by using the manual model builder, perform the following steps:
+After you load the data you must train the data. 
+This consists of choosing the appropiate technique and estimator to apply to the raw data. 
 
-    Open a project in Data Science Experience.
-    If your data is not already part of the project, add a data set to the data assets for the project.
-    To create a model, from the project overview page, click Add to project, and then click Model.
-    Name the model.
-    If you have more than one configured, you have the option to choose a machine learning service and a spark service. If you have not already configured a machine learning instance, you are prompted to assign one to this project or create one. For more information about configuring your services, see Setting up your machine learning environment.
-    To prepare your data and create a model manually, click Manual and then click Create.
-    On the Select data asset step, select a data asset and click Next. If you don't see the data asset you wanted, you can add it from this window by clicking Add Data Assets. Not sure? Click the name of the data asset to preview it. You can also add a connection. Select connections details and click Continue. Based on your data you must select additional connection details, such as schema and table.
-    After the data is loaded, you must select a column value to predict and a technique. A suggested technique is automatically chosen for you.
-    Click Add Estimators to select an algorithm to use in the analysis.
-    Optionally, adjust the validation split. By default this is set to Train: 60%, Test 20%, and Holdout: 20%.
-    After you are done making adjustments, click Next.
-    After the model is done training, click Save, and then, click Save again.
-    If you are ready to deploy this model, from the model information page, click Add Deployment. Deploying the model makes it available to a wider audience. Note: You can have only one deployment per model. For more information, see Deploying a model.
 
 ## Step 4: Deploy a model
 
