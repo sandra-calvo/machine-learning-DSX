@@ -34,22 +34,29 @@ Login to www.bluemix.net and create the following services:
 In order to do so, go to the Catalog find the wanted service. 
 ![](/screenshots/Picture3.png?raw=true)
 
-Watson Machine Learning service is under the Data & Analytics category. Select the service and click on create. 
+Watson Machine Learning service is under the Data & Analytics category.
 ![](/screenshots/Picture4.png?raw=true)
+
+ Make sure you have the correct region and space where you want to create your service and click on create.
 
 ![](/screenshots/Picture7.png?raw=true)
 
 Go back to the Catalog and repeat the process for Apache Spark also located under Data & Analytics
 ![](/screenshots/Picture5.png?raw=true)
 
+ Make sure you have the correct region and space where you want to create your service and click on create.
+ 
 ![](/screenshots/Picture8.png?raw=true)
 
 Go back to the Catalogue and repeat the process for Cloud Object Storage, located under Storage.
 ![](/screenshots/Picture6.png?raw=true)
 
+ Make sure you have the correct region and space where you want to create your service and click on create.
+ 
 ![](/screenshots/Picture9.png?raw=true)
 
 Once you have created the three services click on the IBM Cloud logo on the top left corner to go to your Dashboard. 
+
 ![](/screenshots/Picture10.png?raw=true)
 
 Listed you will find the needed services as shown in the image.
@@ -64,11 +71,38 @@ Go to https://eu-gb.datascience.ibm.com to access IBM Data Science Experience.
 
 Sign in using your IBM Cloud credentials. 
 
+First time you log in the service will prompt a window with you account information. Confirm your information by clicking on Continue.
 
-## Step 3: Build and train a model
-Build a logistic regression model
+![](/screenshots/Picture12.png?raw=true)
+
+After few seconds your Data Science Experience environment will be ready. Click on Done. 
+
+![](/screenshots/Picture13.png?raw=true)
+
+## Step 3: Create a project on DSX (Data Science Experience)
+
+Click on New Project.
+
+![](/screenshots/Picture14.png?raw=true)
+
+Give the project a name and connect with your Spark and Object Storage instances. You should see the services you created in Step 1. 
+
+![](/screenshots/Picture15.png?raw=true)
+
+Then click on Create and your project will be ready! 
+
+Next click on the Assets tab. 
+
+![](/screenshots/Picture16.png?raw=true)
+
+
+## Step 4: Build and train a model
 
 You can use the IBM Data Science Experience model builder to create a model automatically or manually.
+
+![](/screenshots/Picture17.png?raw=true)
+
+
 
 #### Automatic model creation
 
