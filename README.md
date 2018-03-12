@@ -1,28 +1,9 @@
 # Building models with IBM Watson Machine Learning
 
-Test application using Watson Machine Learning on Data Science Experience, running on IBM Cloud.
-
-IBM Machine Learning: IBM Watson Machine Learning is an IBM Cloud service that enables users to perform two fundamental operations of machine learning: training and scoring.
-
-    Training is the process of refining an algorithm so that it can learn from a data set. The output of this operation is called a model. A model encompasses the learned coefficients of mathematical expressions.
-    Scoring is the operation of predicting an outcome by using a trained model. The output of the scoring operation is another data set containing predicted values.
-
-IBM Watson Machine Learning is designed to address the needs of two primary personas:
-
-    Data Scientists: Create machine learning pipelines that leverage data transformations and machine learning algorithms. They typically use notebooks or external tools to train and evaluate their models. Data scientists often collaborate with Data engineers to explore and understand the data.
-    Developers: Build intelligent applications that use the predictions output by machine learning models.
-
-Although training is a critical step in the machine learning process, IBM Watson Machine Learning enables you to streamline the functioning of your models by deploying them and getting actual business value from them over time and through all of their iterations.
-
-IBM Data Science Experience
-
-Spark
-
-Cloud Storage
-
 
 #### Pre-requisites:
   - IBM Cloud Account -  www.bluemix.net
+
   
 ## Step 1: Set up the environment on IBM Cloud
 
@@ -32,23 +13,34 @@ Login to www.bluemix.net and create the following services:
     - Apache Spark
 
 In order to do so, go to the Catalog find the wanted service. 
+
 ![](/screenshots/Picture3.png?raw=true)
 
+**1. IBM Machine Learning** 
+
+IBM Watson Machine Learning is an IBM Cloud service that enables users to perform two fundamental operations of machine learning: training and scoring.
+    - Training is the process of refining an algorithm so that it can learn from a data set. The output of this operation is called a model. A model encompasses the learned coefficients of mathematical expressions.
+    - Scoring is the operation of predicting an outcome by using a trained model. The output of the scoring operation is another data set containing predicted values.
 Watson Machine Learning service is under the Data & Analytics category.
+
 ![](/screenshots/Picture4.png?raw=true)
 
  Make sure you have the correct region and space where you want to create your service and click on create.
 
 ![](/screenshots/Picture7.png?raw=true)
 
+**2. Apache Spark** 
+
 Go back to the Catalog and repeat the process for Apache Spark also located under Data & Analytics
 ![](/screenshots/Picture5.png?raw=true)
 
- Make sure you have the correct region and space where you want to create your service and click on create.
+Make sure you have the correct region and space where you want to create your service and click on create.
  
 ![](/screenshots/Picture8.png?raw=true)
 
-Go back to the Catalogue and repeat the process for Cloud Object Storage, located under Storage.
+**3. Cloud Object Storage** 
+
+Go back to the Catalog and repeat the process for Cloud Object Storage, located under Storage.
 ![](/screenshots/Picture6.png?raw=true)
 
  Make sure you have the correct region and space where you want to create your service and click on create.
@@ -91,16 +83,31 @@ Give the project a name and connect with your Spark and Object Storage instances
 
 Then click on Create and your project will be ready! 
 
-Next click on the Assets tab. 
+Go to the Settings tab and confirm that your project is connected to your Machine Learning, Spark and Object Storage services created in Step 1.
 
-![](/screenshots/Picture16.png?raw=true)
+![](/screenshots/Picture15b.png?raw=true)
+
+![](/screenshots/Picture15c.png?raw=true)
+
+If you are missing a service click on add new service, from existing and select from the list your service.
+
+![](/screenshots/Picture15d.png?raw=true)
 
 
 ## Step 4: Build and train a model
 
-You can use the IBM Data Science Experience model builder to create a model automatically or manually.
+You can create a machine learning model by using the model builder, the flow editor, or a notebook to prepare data, train the model, and deploy the model. In this example we will use the model builder. 
+
+Next click on the Assets tab. 
+
+![](/screenshots/Picture16.png?raw=true)
+
+Under the section Models, click on New model. 
 
 ![](/screenshots/Picture17.png?raw=true)
+
+We will build a logistic regression model that assesses the likelihood that a customer of an outdoor equipment company will buy a tent. 
+Give the model a name and a description.
 
 
 
