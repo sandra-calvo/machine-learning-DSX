@@ -32,6 +32,8 @@ Watson Machine Learning service is under the Data & Analytics category.
 
 **2. Apache Spark** 
 
+Apache Spark is an open source cluster computing framework optimized for extremely fast and large scale data processing, which you can access via the newly integrated notebook interface IBM Analytics for Apache Spark. You can connect to your existing data sources or take advantage of the on-demand big data optimization of Object Storage. Spark plans are based on the maximum number of executors available to process your analytic jobs. Executors exist only as long as they're needed for processing, so you're charged only for processing done.
+
 Go back to the Catalog and repeat the process for Apache Spark also located under Data & Analytics
 ![](/screenshots/Picture5.png?raw=true)
 
@@ -40,6 +42,8 @@ Make sure you have the correct region and space where you want to create your se
 ![](/screenshots/Picture8.png?raw=true)
 
 **3. Cloud Object Storage** 
+
+IBM Cloud Object Storage is a highly scalable cloud storage service, designed for high durability, resiliency and security. Store, manage and access your data via our self-service portal and RESTful APIs. Connect applications directly to Cloud Object Storage use other IBM Cloud Services with your data.
 
 Go back to the Catalog and repeat the process for Cloud Object Storage, located under Storage.
 ![](/screenshots/Picture6.png?raw=true)
@@ -140,7 +144,7 @@ After the training is complete save the model.
 ![](/screenshots/Picture22.png?raw=true)
 
 
-## Step 4: Deploy and test the model
+## Step 5: Deploy and test the model
 
 After you create, train, and evaluate a model, you can deploy it. Although it is possible to score a model without deploying it, a model has to be deployed before it can be scored from the Watson Machine Learning APIs. Also, a model can only have a single deployment. For a trial account, a user can have only one deployed model at a time.
 
