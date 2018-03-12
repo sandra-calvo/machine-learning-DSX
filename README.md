@@ -128,20 +128,30 @@ Select it and click on Next.
 After you load the data you must train the data. 
 This consists of choosing the appropiate technique and estimator to apply to the raw data. 
 
+For the label colum select IS_TENT and keep the default feature columns. 
+Select Binary Classification, next add an estimator using Logistic regression and click Next. This may take few minutes. 
 
-## Step 4: Deploy a model
+![](/screenshots/Picture21.png?raw=true)
+
+After the training is complete save the model. 
+
+![](/screenshots/Picture22.png?raw=true)
+
+
+## Step 4: Deploy and test the model
 
 After you create, train, and evaluate a model, you can deploy it. Although it is possible to score a model without deploying it, a model has to be deployed before it can be scored from the Watson Machine Learning APIs. Also, a model can only have a single deployment. For a trial account, a user can have only one deployed model at a time.
 
-When you deploy a model you save it to the model repository that is associated with your Watson Machine Learning service. Then, you can use your deployed model to score data and build an application.
+Go to the deployments tab and click on add a deployment by clicking on the three dots on under Actions and then view. 
 
-    Deploy a model from a notebook
-    Deploy a Spark model from Flow Editor
-    Deploy an IBM SPSS Model from Flow Editor
-    Deploy a model from the model builder
-    Deploy a model from the project
-    Deploy models from IBM Watson Machine Learning on IBM Cloud
-    Set up deployment for a batch or streaming model
+
+![](/screenshots/Picture23.png?raw=true)
+
+Give your deployment a name and click save. 
+
+![](/screenshots/Picture24.png?raw=true)
+
+When the model deployment is complete, view the deployment. 
 
 
 ## Step 5: Test your model 
