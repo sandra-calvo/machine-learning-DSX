@@ -109,14 +109,15 @@ Under the section Models, click on New model.
 We will build a logistic regression model that assesses the likelihood that a customer of an outdoor equipment company will buy a tent. 
 Give the model a name and a description, select Model builder and Manual.
 
-Automatic method: you rely on automatic data preparation (ADP) completely. 
-Manual method: in addition to some functions that are handled by the ADP transformer, you can add and configure your own estimators, which are the algorithms used in the analysis. 
+- Automatic method: you rely on automatic data preparation (ADP) completely.
+
+- Manual method: in addition to some functions that are handled by the ADP transformer, you can add and configure your own estimators, which are the algorithms used in the analysis. 
 
 ![](/screenshots/Picture18.png?raw=true)
 
 Click on Create.
 
-Let's add some data! Download the GoSales_Tx_LogisticRegression.csv file from this repository and click on Add datasets. 
+Let's add some data! Download the GoSales_Tx_LogisticRegression.csv file from this repository and click on Add data assets. 
 
 ![](/screenshots/Picture19.png?raw=true)
 
@@ -142,8 +143,7 @@ After the training is complete save the model.
 
 After you create, train, and evaluate a model, you can deploy it. Although it is possible to score a model without deploying it, a model has to be deployed before it can be scored from the Watson Machine Learning APIs. Also, a model can only have a single deployment. For a trial account, a user can have only one deployed model at a time.
 
-Go to the deployments tab and click on add a deployment by clicking on the three dots on under Actions and then view. 
-
+Go to the deployments tab and click on add a deployment. 
 
 ![](/screenshots/Picture23.png?raw=true)
 
@@ -151,12 +151,8 @@ Give your deployment a name and click save.
 
 ![](/screenshots/Picture24.png?raw=true)
 
-When the model deployment is complete, view the deployment. 
+When the model deployment is complete, view the deployment by clicking on the three dots on under Actions and then view.
 
+Go to the test tab and interact with the model. Change the model inputs and check the prediction. 
 
-## Step 5: Test your model 
-
-
-You can create a machine learning model by using the model builder, the flow editor, or a notebook to prepare data, train the model, and deploy the model. You build your model by selecting the data, then manipulating the data, and selecting estimators or algorithms to use for classification. You can transform the data by appending new columns or mapping existing data to a new column. An estimator trains the data and produces a model, which you can deploy and use for prediction.
-
-Before you can create a model, you must have a spark service and a machine learning service. If you don't already have a machine learning service, you are given a link and directed to create one during the initial model creation step. 
+![](/screenshots/Picture25.png?raw=true)
