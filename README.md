@@ -8,6 +8,7 @@
 ## Step 1: Set up the environment on IBM Cloud
 
 Login to www.bluemix.net and create the following services:
+
     - Watson Machine Learning
     - Cloud Object Storage
     - Apache Spark
